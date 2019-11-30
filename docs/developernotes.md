@@ -30,7 +30,7 @@ rem activate the virtual environment
 pushd temp
 rem install the package
 pip uninstall findAtlasReviewChanges
-pip install ..\dist\findAtlasReviewChanges-0.0.1-py3-none-any.whl
+pip install ..\dist\findAtlasReviewChanges-0.0.2-py3-none-any.whl
 python -m findAtlasReviewChanges --user "Guy Babineau" --area "US-VA-003" --date "2018-04-08"
 popd
 rem Deactivate the virtual environment
