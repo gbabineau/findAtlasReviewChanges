@@ -20,7 +20,7 @@ Request your key from [here](https://ebird.org/api/keygen). One you get it, save
 
 Then from a command line, you can specify various command line parameters
 
-type `python findAtlasReviewChanges --help` for parameters
+type `python -m findAtlasReviewChanges --help` for parameters
 
 Example
 
