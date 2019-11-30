@@ -41,3 +41,8 @@ rd temp
 ## Bumpversion
 
 Use bumpversion to update the versions across all files.
+
+```batch
+c
+git push --tags
+```
