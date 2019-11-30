@@ -8,7 +8,7 @@ This requires some knowledge of working with command lines on your computer.
 
 1. You will need to install Python.
 
-1. Download the latest whl file in the dist directory of this repository
+1. Download the latest [whl file](https://github.com/gbabineau/findAtlasReviewChanges/blob/master/dist/findAtlasReviewChanges-0.0.2-py3-none-any.whl?raw=true)
 
 1. pip install findAtlasReviewChanges-0.0.3-py3-none-any.whl
 
