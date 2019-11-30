@@ -1,8 +1,13 @@
 # reviewVABBA2data
 
+Version 0.0.0
+
 Using [https://pypi.org/project/ebird-api/](https://pypi.org/project/ebird-api/)
 
-`pip install ebird-api`
+```batch
+pip install ebird-api
+pip install python-dateutil
+```
 
 GitHub Source[https://github.com/ProjectBabbler/ebird-api](https://github.com/ProjectBabbler/ebird-api)
 
