@@ -4,6 +4,8 @@
 # this key can be obtained from https://ebird.org/api/keygen
 # do not abuse the key or it will be revoked
 
+# example command line: python find_reviewer_changes.py --user "Guy Babineau" --area "US-VA-003" --date "2018-04-08"
+
 import os
 import sys
 import argparse
@@ -12,7 +14,7 @@ parser = argparse.ArgumentParser(description='Find ebird Atlas reviewer changes.
 parser.add_argument('--version', action='version', version='%(prog)s 0.0.0')
 parser.add_argument('--verbose', action='store_true', help='increase verbosity')
 parser.add_argument('--user',  required=True, help='User name in quote e.g. --user "Guy Babineau"')
-parser.add_argument('--area',  required=True, help='Country, Region, Subregion to look for lists e.g. --region "US-VA-003"')
+parser.add_argument('--area',  required=True, help='Country, Region, Subregion to look for lists e.g. --area "US-VA-003"')
 parser.add_argument('--key',  default="read environment", help='--key "<obtain secret text"')
 parser.add_argument('--date',  required=True, help='Date to start e.g. --date "2018-04-08"')
 parser.add_argument('--end',  default="one day", help='Date to end e.g. --end "2018-04-12"')

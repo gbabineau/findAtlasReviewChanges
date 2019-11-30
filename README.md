@@ -4,7 +4,11 @@ Version 0.0.0
 
 ## Installing
 
-You will need to install Python.
+This requires some knowledge of working with command lines on your computer.
+
+1. You will need to install Python.
+
+1. Certain dependencies are required. To install them run the following commands.
 
 ```batch
 pip install ebird-api

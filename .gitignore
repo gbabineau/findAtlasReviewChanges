@@ -1,4 +1,11 @@
+*.pyc
+*.swp
+*.egg-info
 
+.gitignore
+.coverage
+.eggs
+.vscode/
+
+docs/source/_build/
 *.tmp
-src/__pycache__
-.vscode
