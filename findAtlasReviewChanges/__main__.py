@@ -4,7 +4,7 @@
 # this key can be obtained from https://ebird.org/api/keygen
 # do not abuse the key or it will be revoked
 
-# example command line: python find_reviewer_changes.py --user "Guy Babineau" --area "US-VA-003" --date "2018-04-08"
+# example command line: python findAtlasReviewChanges --user "Guy Babineau" --area "US-VA-003" --date "2018-04-08"
 
 import os
 import sys

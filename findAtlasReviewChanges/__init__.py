@@ -1,3 +1,3 @@
-"""reviewVABBA2data package."""
+"""findAtlasReviewChanges package."""
 
 __version__ = "0.0.0"

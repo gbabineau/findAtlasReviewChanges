@@ -5,8 +5,8 @@ version = "0.0.0"
 readme = open('README.md').read()
 
 setup(
-    name="reviewVABBA2data",
-    packages=["reviewVABBA2data"],
+    name="findAtlasReviewChanges",
+    packages=["findAtlasReviewChanges"],
     version=version,
     description="Review ones own VABBA2 data for changes made by Atlas Reviews",
     long_description=readme,

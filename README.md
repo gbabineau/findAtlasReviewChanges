@@ -1,4 +1,4 @@
-# reviewVABBA2data
+# findAtlasReviewChanges
 
 Version 0.0.0
 
@@ -34,6 +34,12 @@ Coding was greatly simplified using these [useful Python access functions](https
 Unfortunately, there do not appear to be public API calls which let you obtain checklists by user. So it gets checklist from an area (e.g. county) and scans for ones from a particular user.
 
 Then it goes through the checklist to see if breeding codes were changed from what was entered. Some codes were obtained via examination of the returns of the API calls.
+
+### Running Tests
+
+`python -m unittest`
+
+## Other
 
 [Contributing](CONTRIBUTING.md)
 
