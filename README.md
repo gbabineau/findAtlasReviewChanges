@@ -16,7 +16,7 @@ This requires some knowledge of working with command lines on your computer.
 
 ## Using
 
-Warning, misuse of this utility can place a large demand on ebird.org servers which has a performance and cost impact on others and is not needed. You will be making the requests to ebird.org via a token you request from ebird.org using your ebird login credentials. According to ebird.org misuse of your key to access large amounts of data could result in ebird.org revoking your ability to access the data.
+Warning, misuse of this utility can place a large demand on eBird.org servers which has a performance and cost impact on others and is not needed. You will be making the requests to eBird.org via a token you request from eBird.org using your eBird login credentials. According to eBird.org misuse of your key to access large amounts of data could result in eBird.org revoking your ability to access the data.
 
 Request your key from [here](https://ebird.org/api/keygen). One you get it, save it as you will need it later.
 
@@ -39,13 +39,13 @@ Reviewing Checklist from  2018-04-13 Chris Greene Lake
 C:\directory>
 ```
 
-### Optional - save your ebird api key in an environment variable
+### Optional - save your eBird API key in an environment variable
 
-You can save your api key in an environment variable called EBIRDAPIKEY. If you don't know how, that's ok, you can still use it on the command line. This is done to prevent the api key being shared accidentally in example scripts created for the documentation.
+You can save your API key in an environment variable called EBIRDAPIKEY. If you don't know how, that's ok, you can still use it on the command line. This is done to prevent the API key being shared accidentally in example scripts created for the documentation.
 
 ## What it means
 
-Some time after you enter your ebird checklist, automated and manual checks are performed on all checklists. If, for example, a breeding code is
+Some time after you enter your eBird checklist, automated and manual checks are performed on all checklists. If, for example, a breeding code is
 entered outside of the breeding time period for the area, the breeding code is downgraded to 'observed.'
 
 In the example above, the ebirder (me) entered a red-shouldered hawk carrying food. Since hawks will carry food, and not just for young, this should not be a confirmation unless there are other factors involved. Oops on my part. But the review caught the error.
@@ -54,7 +54,7 @@ But lets say that I had notes which otherwise established that this should me ma
 
 ## How to fix
 
-If desired, you can go to your observation in ebird and modify the checklist to change the code to the downgraded level, or add notes to better establish the code. No action means that the reviewer established code will be used.
+If desired, you can go to your observation in eBird and modify the checklist to change the code to the downgraded level, or add notes to better establish the code. No action means that the reviewer established code will be used.
 
 ## Developer Notes
 
