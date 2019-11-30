@@ -11,7 +11,7 @@ import sys
 import argparse
 
 parser = argparse.ArgumentParser(description='Find ebird Atlas reviewer changes.')
-parser.add_argument('--version', action='version', version='%(prog)s 0.0.2')
+parser.add_argument('--version', action='version', version='%(prog)s 0.0.3')
 parser.add_argument('--verbose', action='store_true', help='increase verbosity')
 parser.add_argument('--user',  required=True, help='User name in quote e.g. --user "Guy Babineau"')
 parser.add_argument('--area',  required=True, help='Country, Region, Subregion to look for lists e.g. --area "US-VA-003"')

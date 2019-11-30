@@ -1,6 +1,6 @@
 # findAtlasReviewChanges
 
-Version 0.0.2
+Version 0.0.3
 
 ## Installing
 
@@ -10,7 +10,7 @@ This requires some knowledge of working with command lines on your computer.
 
 1. Download the latest whl file in the dist directory of this repository
 
-1. pip install findAtlasReviewChanges-0.0.2-py3-none-any.whl
+1. pip install findAtlasReviewChanges-0.0.3-py3-none-any.whl
 
 ## Using
 
