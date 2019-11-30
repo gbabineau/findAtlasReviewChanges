@@ -30,7 +30,7 @@ rem activate the virtual environment
 pushd temp
 rem install the package
 pip uninstall findAtlasReviewChanges
-pip install ..\dist\findAtlasReviewChanges-0.0.0-py3-none-any.whl
+pip install ..\dist\findAtlasReviewChanges-0.0.1-py3-none-any.whl
 python -m findAtlasReviewChanges --user "Guy Babineau" --area "US-VA-003" --date "2018-04-08"
 popd
 rem Deactivate the virtual environment
@@ -38,11 +38,11 @@ deactivate
 rd temp
 ```
 
-## Bumpversion
+## Bump2version
 
-Use bumpversion to update the versions across all files.
+Use bump2version to update the versions across all files.
 
 ```batch
-c
+bump2version patch
 git push --tags
 ```
