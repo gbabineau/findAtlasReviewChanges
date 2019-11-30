@@ -9,3 +9,5 @@
 
 docs/source/_build/
 *.tmp
+env/
+build/

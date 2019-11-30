@@ -14,7 +14,7 @@ setup(
     author="Guy L. Babineau",
     author_email="guy.babineau@gmail.com",
     url=url,
-    install_requires=[],
+    install_requires=['ebird-api','python-dateutil'],
     download_url="{}/tarball/{}".format(url, version),
     license="MIT"
 )

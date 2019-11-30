@@ -8,12 +8,9 @@ This requires some knowledge of working with command lines on your computer.
 
 1. You will need to install Python.
 
-1. Certain dependencies are required. To install them run the following commands.
+1. Download the latest whl file in the dist directory of this repository
 
-```batch
-pip install ebird-api
-pip install python-dateutil
-```
+1. pip install findAtlasReviewChanges-0.0.0-py3-none-any.whl
 
 ## Using
 
@@ -21,19 +18,45 @@ Warning, misuse of this utility can place a large demand on ebird.org servers wh
 
 Request your key from [here](https://ebird.org/api/keygen). One you get it, save it as you will need it later.
 
+Then from a command line, you can specify various command line parameters
+
+type `python findAtlasReviewChanges --help` for parameters
+
+Example
+
+```batch
+C:\directory>python -m findAtlasReviewChanges --user "Guy Babineau" --area "US-VA-003" --date "2018-04-01" --end "2018-04-14"
+Reviewing Checklist from  2018-04-08 Bridlepath Yard
+Reviewing Checklist from  2018-04-08 750 Bridlepath Drive, Earlysville, Virginia, US (38.126, -78.476)
+Reviewing Checklist from  2018-04-08 Chris Greene Lake Dam Area
+reshaw  Changed to  Possible  from  CF Carrying Food (Confirmed)
+Reviewing Checklist from  2018-04-08 Chris Greene Lake
+Reviewing Checklist from  2018-04-13 Bridlepath Yard
+Reviewing Checklist from  2018-04-13 Chris Greene Lake
+
+C:\directory>
+```
+
 ### Optional - save your ebird api key in an environment variable
 
 You can save your api key in an environment variable called EBIRDAPIKEY. If you don't know how, that's ok, you can still use it on the command line. This is done to prevent the api key being shared accidentally in example scripts created for the documentation.
 
+## What it means
+
+Some time after you enter your ebird checklist, automated and manual checks are performed on all checklists. If, for example, a breeding code is
+entered outside of the breeding time period for the area, the breeding code is downgraded to 'observed.'
+
+In the example above, the ebirder (me) entered a red-shouldered hawk carrying food. Since hawks will carry food, and not just for young, this should not be a confirmation unless there are other factors involved. Oops on my part. But the review caught the error.
+
+But lets say that I had notes which otherwise established that this should me maintained as a confirmed code, I could add those notes, or perhaps change the code. A good example of where I think this could be done is that when 'Pair in suitable habitat' is used species at least superficially sexually monomorphic species such as Canada Goose, they are automatically downgraded to Observed. Since gender can also be established by voice, and perhaps behavior, a comment added to the observation may have been used by the atlas reviewer to keep the observation coded as 'Pair in suitable habitat.'
+
+## How to fix
+
+If desired, you can go to your observation in ebird and modify the checklist to change the code to the downgraded level, or add notes to better establish the code. No action means that the reviewer established code will be used.
+
 ## Developer Notes
 
-This relies on functionality based on [eBird API 2.0](https://documenter.getpostman.com/view/664302/S1ENwy59?version=latest).
-
-Coding was greatly simplified using these [useful Python access functions](https://github.com/ProjectBabbler/ebird-api).
-
-Unfortunately, there do not appear to be public API calls which let you obtain checklists by user. So it gets checklist from an area (e.g. county) and scans for ones from a particular user.
-
-Then it goes through the checklist to see if breeding codes were changed from what was entered. Some codes were obtained via examination of the returns of the API calls.
+[See details](docs\developernotes.md)
 
 ### Running Tests
 
