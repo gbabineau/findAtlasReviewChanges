@@ -2,6 +2,8 @@
 
 Version 0.0.3
 
+![](https://github.com/gbabineau/findAtlasReviewChanges/workflows/Python%20application/badge.svg) ![](https://github.com/gbabineau/findAtlasReviewChanges/workflows/Labeler/badge.svg)
+
 ## Installing
 
 This requires some knowledge of working with command lines on your computer.
