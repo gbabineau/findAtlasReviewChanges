@@ -58,10 +58,6 @@ If desired, you can go to your observation in ebird and modify the checklist to 
 
 [See details](docs\developernotes.md)
 
-### Running Tests
-
-`python -m unittest`
-
 ## Other
 
 [Contributing](CONTRIBUTING.md)

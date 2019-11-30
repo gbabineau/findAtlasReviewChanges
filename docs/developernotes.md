@@ -38,6 +38,10 @@ deactivate
 rd temp
 ```
 
+## Running Tests
+
+`pytest`
+
 ## Bump2version
 
 Use bump2version to update the versions across all files.
