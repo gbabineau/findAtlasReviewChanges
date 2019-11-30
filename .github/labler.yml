@@ -1,0 +1,20 @@
+# Add 'repo' label to any root file changes
+repo:
+  - ./*
+  
+# Add '@domain/core' label to any change within the 'core' package
+@domain/core:
+  - package/core/*
+  - package/core/**/*
+
+# Add 'test' label to any change to files within the source dir
+test:
+  - test/**/*
+  
+ # Add 'docs' label to any change to files within the source dir
+docs:
+  - docs/**/*
+  
+ # Add 'code' label to any change to files within the source dir
+code:
+  - findAtlasReviewChanges/**/*
