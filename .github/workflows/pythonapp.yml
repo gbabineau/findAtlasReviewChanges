@@ -33,6 +33,8 @@ jobs:
       run: 
         mdspell --report --en-us --ignore-numbers --ignore-acronyms --no-suggestions "./**/*.md"
     - name: Test with pytest
+      with: # Set the secret as an input
+      EBIRDAPIKEY: ${{ secrets.SuperSecret }}
       env: # Or as an environment variable
       EBIRDAPIKEY: ${{ secrets.EBIRDAPIKEY }}
       run: |
