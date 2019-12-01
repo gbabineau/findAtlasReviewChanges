@@ -8,7 +8,7 @@ Unfortunately, there do not appear to be public API calls which let you obtain c
 
 Then it goes through the checklist to see if breeding codes were changed from what was entered. Some codes were obtained via examination of the returns of the API calls.
 
-## creating the whl file
+## creating the `whl` file
 
 `python setup.py sdist bdist_wheel`
 
@@ -42,9 +42,9 @@ rd temp
 
 `pytest`
 
-## Bump2version
+## `Bump2version`
 
-Use bump2version to update the versions across all files.
+Use `bump2version` to update the versions across all files.
 
 ```batch
 bump2version patch
