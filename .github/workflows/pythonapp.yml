@@ -26,6 +26,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Setup Node.js for use with actions
       uses: actions/setup-node@v1.1.0
+    - name: Install markdown-spellcheck
       run: 
         npm i markdown-spellcheck -g
     - name: Spell check
