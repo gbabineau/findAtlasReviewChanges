@@ -27,9 +27,15 @@ jobs:
     - name: Spell check
       run:
         npm i markdown-spellcheck -g
+    - name: Spell check2
+      run:
         npm --version
-        ls ./**/*.md
+    - name: Spell check3
+      run:
         mdspell --report --en-us --ignore-numbers --ignore-acronyms --no-suggestions "./**/*.md"
+    - name: Spell check4
+      run:
+          ls
     - name: Test with pytest
       run: |
         pip install pytest
