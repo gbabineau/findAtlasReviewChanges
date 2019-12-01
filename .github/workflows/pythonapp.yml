@@ -28,6 +28,7 @@ jobs:
       run:
         npm i markdown-spellcheck -g
         npm --version
+        ls ./**/*.md
         mdspell --report --en-us --ignore-numbers --ignore-acronyms --no-suggestions "./**/*.md"
     - name: Test with pytest
       run: |
