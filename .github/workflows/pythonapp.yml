@@ -34,7 +34,7 @@ jobs:
         mdspell --report --en-us --ignore-numbers --ignore-acronyms --no-suggestions "./**/*.md"
     - name: Test with pytest
       env: # Or as an environment variable
-      super_secret: ${{ secrets.EBIRDAPIKEY }}
+      EBIRDAPIKEY: ${{ secrets.EBIRDAPIKEY }}
       run: |
         pip install pytest
         pytest
