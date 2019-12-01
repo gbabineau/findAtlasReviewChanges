@@ -9,6 +9,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+      with: # Set the secret as an input
+      EBIRDAPIKEY: ${{ secrets.SuperSecret }}
+      env: # Or as an environment variable
+      EBIRDAPIKEY: ${{ secrets.EBIRDAPIKEY }}
     - name: Set up Python 3.7
       uses: actions/setup-python@v1
       with:
@@ -33,10 +37,6 @@ jobs:
       run: 
         mdspell --report --en-us --ignore-numbers --ignore-acronyms --no-suggestions "./**/*.md"
     - name: Test with pytest
-      with: # Set the secret as an input
-      EBIRDAPIKEY: ${{ secrets.SuperSecret }}
-      env: # Or as an environment variable
-      EBIRDAPIKEY: ${{ secrets.EBIRDAPIKEY }}
       run: |
         pip install pytest
         pytest
