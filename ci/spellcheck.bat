@@ -1,1 +1,1 @@
-mdspell --report --en-us --ignore-numbers --ignore-acronyms --no-suggestions "**/*.md"
+mdspell --report --en-us --ignore-numbers --ignore-acronyms --no-suggestions "./**/*.md"

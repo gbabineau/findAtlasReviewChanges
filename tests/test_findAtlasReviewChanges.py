@@ -9,4 +9,4 @@ def test_version_is_string():
 
 
 def test_CLI_version():
-    assert isinstance(1 == 1)
+    assert (1 == 1)
