@@ -10,7 +10,7 @@ This requires some knowledge of working with command lines on your computer.
 
 1. You will need to install Python.
 
-1. Download the latest [whl file](https://github.com/gbabineau/findAtlasReviewChanges/blob/master/dist/findAtlasReviewChanges-0.0.3-py3-none-any.whl).
+1. Download the latest [WHL file](https://github.com/gbabineau/findAtlasReviewChanges/blob/master/dist/findAtlasReviewChanges-0.0.3-py3-none-any.whl).
 
 1. Install the application using this command line text `pip install findAtlasReviewChanges-0.0.3-py3-none-any.whl`
 
@@ -41,7 +41,7 @@ C:\directory>
 
 ### Optional - save your eBird API key in an environment variable
 
-You can save your API key in an environment variable called EBIRDAPIKEY. If you don't know how, that's ok, you can still use it on the command line. This is done to prevent the API key being shared accidentally in example scripts created for the documentation.
+You can save your API key in an environment variable called EBIRDAPIKEY. If you don't know how, that's fine. You can still use it on the command line. This is done to prevent the API key being shared accidentally in example scripts created for the documentation.
 
 ## What it means
 
