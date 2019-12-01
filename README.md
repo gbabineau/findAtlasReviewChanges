@@ -1,7 +1,5 @@
 # findAtlasReviewChanges
 
-sdakfsdf 
-
 Version 0.0.3
 
 ![](https://github.com/gbabineau/findAtlasReviewChanges/workflows/Python%20application/badge.svg) ![](https://github.com/gbabineau/findAtlasReviewChanges/workflows/Labeler/badge.svg)
