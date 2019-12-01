@@ -1,12 +1,16 @@
 """Test the findAtlasReviewChanges package."""
 
 import findAtlasReviewChanges
-
+import os
+from  findAtlasReviewChanges import review_checklist
+from  findAtlasReviewChanges import review_visits
 
 def test_version_is_string():
-    print(findAtlasReviewChanges.__version__)
     assert isinstance(findAtlasReviewChanges.__version__, str)
 
 
-def test_CLI_version():
-    assert (1 == 1)
+def test_CLI_version(capsys):
+    ebird_api_key = os.getenv('EBIRDAPIKEY')
+    review_checklist(ebird_api_key, 'S35636314')
+    captured = capsys.readouterr()
+    assert ("cangoo" in captured.out)
