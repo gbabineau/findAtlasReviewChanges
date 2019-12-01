@@ -30,7 +30,6 @@ jobs:
       run: 
         npm i markdown-spellcheck -g
     - name: Spell check
-      uses: actions/setup-node@v1.1.0
       run: 
         npm --version
         mdspell --report --en-us --ignore-numbers --ignore-acronyms --no-suggestions "./**/*.md"
