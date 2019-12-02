@@ -1,7 +1,7 @@
 from setuptools import setup
 
 url = ""
-version = "0.0.3"
+version = "0.0.4"
 readme = open('README.md').read()
 
 setup(
