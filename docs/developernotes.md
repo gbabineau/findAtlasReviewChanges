@@ -42,11 +42,14 @@ rd temp
 
 `pytest`
 
-## `Bump2version`
+## Create a new release version with `Bump2version`
 
-Use `bump2version` to update the versions across all files.
+Here is how to `bump2version` to update the versions across all files and then create a new release
 
 ```batch
 bump2version patch
+python setup.py sdist bdist_wheel
 git push --tags
 ```
+
+Then push and pull from remote!
