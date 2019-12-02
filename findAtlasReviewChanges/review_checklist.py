@@ -1,5 +1,6 @@
-# Copyright (c) 2019 Guy Babineau
+"""Reviews a checklist to find changes made by reviewers."""
 
+# Copyright (c) 2019 Guy Babineau
 
 # These codes were developed by trial and error as I did not find them documented
 # there is a certainty that some are missing
@@ -41,6 +42,20 @@ value_translation = {
 
 
 def review_checklist(ebird_api_key, checklist_name):
+    """Looks at a single checklist for changes made by reviewers
+
+    According to eBird, this API should not be abused so limit calls to this function
+
+    Args
+        ebird_api_key : access key from eBird tied to account
+        checklist_name : name of the checklist in eBird - e.g. S35636314
+
+    Returns:
+        NA - prints to stdout
+
+    Raises:
+        NA - but can exit on failure to retrieve data
+    """
     checklist = get_checklist(ebird_api_key, checklist_name)
 
     observations = checklist['obs']
