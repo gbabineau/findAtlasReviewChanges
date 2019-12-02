@@ -1,6 +1,6 @@
 # Copyright (c) 2019 Guy Babineau
 
-# relies on the ebird api key to be in the environment variable EBIRDAPIKEY or speficed on command line
+# relies on the ebird api key to be in the environment variable EBIRDAPIKEY or specified on command line
 # this key can be obtained from https://ebird.org/api/keygen
 # do not abuse the key or it will be revoked
 
