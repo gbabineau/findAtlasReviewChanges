@@ -1,3 +1,5 @@
+theme: slate
+
 plugins:
   - jekyll-relative-links
   
