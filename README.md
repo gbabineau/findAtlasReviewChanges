@@ -1,6 +1,6 @@
 # findAtlasReviewChanges
 
-Version 0.0.4
+Version 0.1.0
 
 ![Application](https://github.com/gbabineau/findAtlasReviewChanges/workflows/Python%20application/badge.svg) ![Labler](https://github.com/gbabineau/findAtlasReviewChanges/workflows/Labeler/badge.svg)
 
@@ -10,9 +10,9 @@ This requires some knowledge of working with command lines on your computer.
 
 1. You will need to install Python.
 
-1. Download the latest [WHL file](https://github.com/gbabineau/findAtlasReviewChanges/blob/master/dist/findAtlasReviewChanges-0.0.4-py3-none-any.whl).
+1. Download the latest [WHL file](https://github.com/gbabineau/findAtlasReviewChanges/blob/master/dist/findAtlasReviewChanges-0.1.0-py3-none-any.whl).
 
-1. Install the application using this command line text `pip install findAtlasReviewChanges-0.0.4-py3-none-any.whl`
+1. Install the application using this command line text `pip install findAtlasReviewChanges-0.1.0-py3-none-any.whl`
 
 ## Using
 

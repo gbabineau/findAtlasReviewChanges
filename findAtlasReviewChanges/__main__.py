@@ -16,7 +16,7 @@ from dateutil import parser
 
 
 arg_parser = argparse.ArgumentParser(description='Find ebird Atlas reviewer changes.')
-arg_parser.add_argument('--version', action='version', version='%(prog)s 0.0.4')
+arg_parser.add_argument('--version', action='version', version='%(prog)s 0.1.0')
 arg_parser.add_argument('--verbose', action='store_true', help='increase verbosity')
 arg_parser.add_argument('--user',  required=True, help='User name in quote e.g. --user "Guy Babineau"')
 arg_parser.add_argument('--area',  required=True, help='Country, Region, Subregion to look for lists e.g. --area "US-VA-003"')
