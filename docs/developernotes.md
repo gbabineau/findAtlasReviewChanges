@@ -46,6 +46,8 @@ rd temp
 
 Here is how to `bump2version` to update the versions across all files and then create a new release
 
+make sure you pip install wheel
+
 ```batch
 bump2version patch
 python setup.py sdist bdist_wheel
