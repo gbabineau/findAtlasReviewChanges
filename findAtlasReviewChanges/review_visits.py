@@ -35,7 +35,7 @@ def review_visits(ebird_api_key, user, area, day, end_day, max_records, verbose)
     while day < end_day:
         day_string = day.strftime("%Y-%m-%d")
         records = get_visits(ebird_api_key, area, day_string, max_records)
-        if len(records) == max_records:
+        if (len(records) >= (int(max_records)-1)):
             sys.exit("Error: got max_records(" + str(max_records) + ") in " + area + " on " + day_string
                      + " - use a smaller area or larger max_records")
 
